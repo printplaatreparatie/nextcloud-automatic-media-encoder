@@ -1,15 +1,3 @@
 {
-    "name": "cwilby/nextcloud-automatic-media-converter",
-    "description": "Automatic photo/video conversion with rule-based configuration",
-    "type": "project",
-    "license": "AGPL",
-    "authors": [
-        {
-            "name": "Cameron Wilby"
-        }
-    ],
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "^5.4"
-    }
+    "require": {}
 }
