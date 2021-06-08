@@ -1,7 +1,7 @@
 <template>
 	<div class="automc-admin-settings">
 		<h2>
-			<img :src="require('@/img/icon.svg')">
+			<img src="/apps/automaticmediaencoder/img/icon.svg">
 			{{ ta('Automatic Media Encoder') }}
 		</h2>
 		<encoder-status :status-message="state.status_message" :status-error="state.status_error" />
@@ -84,6 +84,10 @@ export default {
 
 <style lang="scss">
 .automc-admin-settings {
+	img {
+		width: 1em;
+		height: 1em;
+	}
 	padding: 1em;
 	.checkbox {
 		display: flex;

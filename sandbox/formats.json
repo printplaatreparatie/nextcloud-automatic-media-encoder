@@ -1,0 +1,2838 @@
+{
+    "photo": {
+        "from": [],
+        "to": []
+    },
+    "audio": {
+        "from": [
+            {
+                "extension": "8svx_exp",
+                "label": "8SVX exponential",
+                "compression": "lossy"
+            },
+            {
+                "extension": "8svx_fib",
+                "label": "8SVX fibonacci",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aac",
+                "label": "AAC (Advanced Audio Coding) (decoders: aac aac_fixed )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aac_latm",
+                "label": "AAC LATM (Advanced Audio Coding LATM syntax)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ac3",
+                "label": "ATSC A/52A (AC-3) (decoders: ac3 ac3_fixed ) (encoders: ac3 ac3_fixed )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_4xm",
+                "label": "ADPCM 4X Movie",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_adx",
+                "label": "SEGA CRI ADX ADPCM",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_afc",
+                "label": "ADPCM Nintendo Gamecube AFC",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_agm",
+                "label": "ADPCM AmuseGraphics Movie AGM",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_aica",
+                "label": "ADPCM Yamaha AICA",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ct",
+                "label": "ADPCM Creative Technology",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_dtk",
+                "label": "ADPCM Nintendo Gamecube DTK",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ea",
+                "label": "ADPCM Electronic Arts",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ea_maxis_xa",
+                "label": "ADPCM Electronic Arts Maxis CDROM XA",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ea_r1",
+                "label": "ADPCM Electronic Arts R1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ea_r2",
+                "label": "ADPCM Electronic Arts R2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ea_r3",
+                "label": "ADPCM Electronic Arts R3",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ea_xas",
+                "label": "ADPCM Electronic Arts XAS",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_g722",
+                "label": "G.722 ADPCM (decoders: g722 ) (encoders: g722 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_g726",
+                "label": "G.726 ADPCM (decoders: g726 ) (encoders: g726 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_g726le",
+                "label": "G.726 ADPCM little-endian (decoders: g726le ) (encoders: g726le )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_amv",
+                "label": "ADPCM IMA AMV",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_apc",
+                "label": "ADPCM IMA CRYO APC",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_dat4",
+                "label": "ADPCM IMA Eurocom DAT4",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_dk3",
+                "label": "ADPCM IMA Duck DK3",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_dk4",
+                "label": "ADPCM IMA Duck DK4",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_ea_eacs",
+                "label": "ADPCM IMA Electronic Arts EACS",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_ea_sead",
+                "label": "ADPCM IMA Electronic Arts SEAD",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_iss",
+                "label": "ADPCM IMA Funcom ISS",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_oki",
+                "label": "ADPCM IMA Dialogic OKI",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_qt",
+                "label": "ADPCM IMA QuickTime",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_rad",
+                "label": "ADPCM IMA Radical",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_smjpeg",
+                "label": "ADPCM IMA Loki SDL MJPEG",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_wav",
+                "label": "ADPCM IMA WAV",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_ws",
+                "label": "ADPCM IMA Westwood",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ms",
+                "label": "ADPCM Microsoft",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_mtaf",
+                "label": "ADPCM MTAF",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_psx",
+                "label": "ADPCM Playstation",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_sbpro_2",
+                "label": "ADPCM Sound Blaster Pro 2-bit",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_sbpro_3",
+                "label": "ADPCM Sound Blaster Pro 2.6-bit",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_sbpro_4",
+                "label": "ADPCM Sound Blaster Pro 4-bit",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_swf",
+                "label": "ADPCM Shockwave Flash",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_thp",
+                "label": "ADPCM Nintendo THP",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_thp_le",
+                "label": "ADPCM Nintendo THP (Little-Endian)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_vima",
+                "label": "LucasArts VIMA audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_xa",
+                "label": "ADPCM CDROM XA",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_yamaha",
+                "label": "ADPCM Yamaha",
+                "compression": "lossy"
+            },
+            {
+                "extension": "alac",
+                "label": "ALAC (Apple Lossless Audio Codec)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "amr_nb",
+                "label": "AMR-NB (Adaptive Multi-Rate NarrowBand) (decoders: amrnb )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "amr_wb",
+                "label": "AMR-WB (Adaptive Multi-Rate WideBand) (decoders: amrwb )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ape",
+                "label": "Monkey's Audio",
+                "compression": "lossless"
+            },
+            {
+                "extension": "aptx",
+                "label": "aptX (Audio Processing Technology for Bluetooth)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aptx_hd",
+                "label": "aptX HD (Audio Processing Technology for Bluetooth)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "atrac1",
+                "label": "ATRAC1 (Adaptive TRansform Acoustic Coding)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "atrac3",
+                "label": "ATRAC3 (Adaptive TRansform Acoustic Coding 3)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "atrac3al",
+                "label": "ATRAC3 AL (Adaptive TRansform Acoustic Coding 3 Advanced Lossless)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "atrac3p",
+                "label": "ATRAC3+ (Adaptive TRansform Acoustic Coding 3+) (decoders: atrac3plus )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "atrac3pal",
+                "label": "ATRAC3+ AL (Adaptive TRansform Acoustic Coding 3+ Advanced Lossless) (decoders: atrac3plusal )",
+                "compression": "lossless"
+            },
+            {
+                "extension": "atrac9",
+                "label": "ATRAC9 (Adaptive TRansform Acoustic Coding 9)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "avc",
+                "label": "On2 Audio for Video Codec (decoders: on2avc )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "binkaudio_dct",
+                "label": "Bink Audio (DCT)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "binkaudio_rdft",
+                "label": "Bink Audio (RDFT)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "bmv_audio",
+                "label": "Discworld II BMV audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "codec2",
+                "label": "codec2 (very low bitrate speech codec) (decoders: libcodec2 ) (encoders: libcodec2 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "comfortnoise",
+                "label": "RFC 3389 Comfort Noise",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cook",
+                "label": "Cook / Cooker / Gecko (RealAudio G2)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dolby_e",
+                "label": "Dolby E",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dsd_lsbf",
+                "label": "DSD (Direct Stream Digital), least significant bit first",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dsd_lsbf_planar",
+                "label": "DSD (Direct Stream Digital), least significant bit first, planar",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dsd_msbf",
+                "label": "DSD (Direct Stream Digital), most significant bit first",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dsd_msbf_planar",
+                "label": "DSD (Direct Stream Digital), most significant bit first, planar",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dsicinaudio",
+                "label": "Delphine Software International CIN audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dss_sp",
+                "label": "Digital Speech Standard - Standard Play mode (DSS SP)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dst",
+                "label": "DST (Direct Stream Transfer)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "dts",
+                "label": "DCA (DTS Coherent Acoustics) (decoders: dca ) (encoders: dca )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dvaudio",
+                "label": "DV audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "eac3",
+                "label": "ATSC A/52B (AC-3, E-AC-3)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "evrc",
+                "label": "EVRC (Enhanced Variable Rate Codec)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "flac",
+                "label": "FLAC (Free Lossless Audio Codec)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "g723_1",
+                "label": "G.723.1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "g729",
+                "label": "G.729",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gremlin_dpcm",
+                "label": "DPCM Gremlin",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gsm",
+                "label": "GSM (decoders: gsm libgsm ) (encoders: libgsm )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gsm_ms",
+                "label": "GSM Microsoft variant (decoders: gsm_ms libgsm_ms ) (encoders: libgsm_ms )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hcom",
+                "label": "HCOM Audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "iac",
+                "label": "IAC (Indeo Audio Coder)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ilbc",
+                "label": "iLBC (Internet Low Bitrate Codec)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "imc",
+                "label": "IMC (Intel Music Coder)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "interplay_dpcm",
+                "label": "DPCM Interplay",
+                "compression": "lossy"
+            },
+            {
+                "extension": "interplayacm",
+                "label": "Interplay ACM",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mace3",
+                "label": "MACE (Macintosh Audio Compression/Expansion) 3:1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mace6",
+                "label": "MACE (Macintosh Audio Compression/Expansion) 6:1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "metasound",
+                "label": "Voxware MetaSound",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mlp",
+                "label": "MLP (Meridian Lossless Packing)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mp1",
+                "label": "MP1 (MPEG audio layer 1) (decoders: mp1 mp1float )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mp2",
+                "label": "MP2 (MPEG audio layer 2) (decoders: mp2 mp2float ) (encoders: mp2 mp2fixed libtwolame )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mp3",
+                "label": "MP3 (MPEG audio layer 3) (decoders: mp3float mp3 ) (encoders: libmp3lame libshine )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mp3adu",
+                "label": "ADU (Application Data Unit) MP3 (MPEG audio layer 3) (decoders: mp3adufloat mp3adu )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mp3on4",
+                "label": "MP3onMP4 (decoders: mp3on4float mp3on4 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mp4als",
+                "label": "MPEG-4 Audio Lossless Coding (ALS) (decoders: als )",
+                "compression": "lossless"
+            },
+            {
+                "extension": "musepack7",
+                "label": "Musepack SV7 (decoders: mpc7 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "musepack8",
+                "label": "Musepack SV8 (decoders: mpc8 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "nellymoser",
+                "label": "Nellymoser Asao",
+                "compression": "lossy"
+            },
+            {
+                "extension": "opus",
+                "label": "Opus (Opus Interactive Audio Codec) (decoders: opus libopus ) (encoders: opus libopus )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "paf_audio",
+                "label": "Amazing Studio Packed Animation File Audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_alaw",
+                "label": "PCM A-law / G.711 A-law",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_bluray",
+                "label": "PCM signed 16|20|24-bit big-endian for Blu-ray media",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_dvd",
+                "label": "PCM signed 20|24-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f16le",
+                "label": "PCM 16.8 floating point little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f24le",
+                "label": "PCM 24.0 floating point little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f32be",
+                "label": "PCM 32-bit floating point big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f32le",
+                "label": "PCM 32-bit floating point little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f64be",
+                "label": "PCM 64-bit floating point big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f64le",
+                "label": "PCM 64-bit floating point little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_lxf",
+                "label": "PCM signed 20-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_mulaw",
+                "label": "PCM mu-law / G.711 mu-law",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_s16be",
+                "label": "PCM signed 16-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s16be_planar",
+                "label": "PCM signed 16-bit big-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s16le",
+                "label": "PCM signed 16-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s16le_planar",
+                "label": "PCM signed 16-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24be",
+                "label": "PCM signed 24-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24daud",
+                "label": "PCM D-Cinema audio signed 24-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24le",
+                "label": "PCM signed 24-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24le_planar",
+                "label": "PCM signed 24-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s32be",
+                "label": "PCM signed 32-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s32le",
+                "label": "PCM signed 32-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s32le_planar",
+                "label": "PCM signed 32-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s64be",
+                "label": "PCM signed 64-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s64le",
+                "label": "PCM signed 64-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s8",
+                "label": "PCM signed 8-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s8_planar",
+                "label": "PCM signed 8-bit planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u16be",
+                "label": "PCM unsigned 16-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u16le",
+                "label": "PCM unsigned 16-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u24be",
+                "label": "PCM unsigned 24-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u24le",
+                "label": "PCM unsigned 24-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u32be",
+                "label": "PCM unsigned 32-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u32le",
+                "label": "PCM unsigned 32-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u8",
+                "label": "PCM unsigned 8-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_vidc",
+                "label": "PCM Archimedes VIDC",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_zork",
+                "label": "PCM Zork",
+                "compression": "lossy"
+            },
+            {
+                "extension": "qcelp",
+                "label": "QCELP / PureVoice",
+                "compression": "lossy"
+            },
+            {
+                "extension": "qdm2",
+                "label": "QDesign Music Codec 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "qdmc",
+                "label": "QDesign Music",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ra_144",
+                "label": "RealAudio 1.0 (14.4K) (decoders: real_144 ) (encoders: real_144 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ra_288",
+                "label": "RealAudio 2.0 (28.8K) (decoders: real_288 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ralf",
+                "label": "RealAudio Lossless",
+                "compression": "lossless"
+            },
+            {
+                "extension": "roq_dpcm",
+                "label": "DPCM id RoQ",
+                "compression": "lossy"
+            },
+            {
+                "extension": "s302m",
+                "label": "SMPTE 302M",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sbc",
+                "label": "SBC (low-complexity subband codec)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sdx2_dpcm",
+                "label": "DPCM Squareroot-Delta-Exact",
+                "compression": "lossy"
+            },
+            {
+                "extension": "shorten",
+                "label": "Shorten",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sipr",
+                "label": "RealAudio SIPR / ACELP.NET",
+                "compression": "lossy"
+            },
+            {
+                "extension": "smackaudio",
+                "label": "Smacker audio (decoders: smackaud )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sol_dpcm",
+                "label": "DPCM Sol",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sonic",
+                "label": "Sonic",
+                "compression": null
+            },
+            {
+                "extension": "speex",
+                "label": "Speex (decoders: libspeex ) (encoders: libspeex )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tak",
+                "label": "TAK (Tom's lossless Audio Kompressor)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "truehd",
+                "label": "TrueHD",
+                "compression": "lossless"
+            },
+            {
+                "extension": "truespeech",
+                "label": "DSP Group TrueSpeech",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tta",
+                "label": "TTA (True Audio)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "twinvq",
+                "label": "VQF TwinVQ",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vmdaudio",
+                "label": "Sierra VMD audio",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vorbis",
+                "label": "Vorbis (decoders: vorbis libvorbis ) (encoders: vorbis libvorbis )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wavesynth",
+                "label": "Wave synthesis pseudo-codec",
+                "compression": null
+            },
+            {
+                "extension": "wavpack",
+                "label": "WavPack (encoders: wavpack libwavpack )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "westwood_snd1",
+                "label": "Westwood Audio (SND1) (decoders: ws_snd1 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmalossless",
+                "label": "Windows Media Audio Lossless",
+                "compression": "lossless"
+            },
+            {
+                "extension": "wmapro",
+                "label": "Windows Media Audio 9 Professional",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmav1",
+                "label": "Windows Media Audio 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmav2",
+                "label": "Windows Media Audio 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmavoice",
+                "label": "Windows Media Audio Voice",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xan_dpcm",
+                "label": "DPCM Xan",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xma1",
+                "label": "Xbox Media Audio 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xma2",
+                "label": "Xbox Media Audio 2",
+                "compression": "lossy"
+            }
+        ],
+        "to": [
+            {
+                "extension": "aac",
+                "label": "AAC (Advanced Audio Coding) (decoders: aac aac_fixed )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ac3",
+                "label": "ATSC A/52A (AC-3) (decoders: ac3 ac3_fixed ) (encoders: ac3 ac3_fixed )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_adx",
+                "label": "SEGA CRI ADX ADPCM",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_g722",
+                "label": "G.722 ADPCM (decoders: g722 ) (encoders: g722 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_g726",
+                "label": "G.726 ADPCM (decoders: g726 ) (encoders: g726 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_g726le",
+                "label": "G.726 ADPCM little-endian (decoders: g726le ) (encoders: g726le )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_qt",
+                "label": "ADPCM IMA QuickTime",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ima_wav",
+                "label": "ADPCM IMA WAV",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_ms",
+                "label": "ADPCM Microsoft",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_swf",
+                "label": "ADPCM Shockwave Flash",
+                "compression": "lossy"
+            },
+            {
+                "extension": "adpcm_yamaha",
+                "label": "ADPCM Yamaha",
+                "compression": "lossy"
+            },
+            {
+                "extension": "alac",
+                "label": "ALAC (Apple Lossless Audio Codec)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "aptx",
+                "label": "aptX (Audio Processing Technology for Bluetooth)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aptx_hd",
+                "label": "aptX HD (Audio Processing Technology for Bluetooth)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "codec2",
+                "label": "codec2 (very low bitrate speech codec) (decoders: libcodec2 ) (encoders: libcodec2 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "comfortnoise",
+                "label": "RFC 3389 Comfort Noise",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dts",
+                "label": "DCA (DTS Coherent Acoustics) (decoders: dca ) (encoders: dca )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "eac3",
+                "label": "ATSC A/52B (AC-3, E-AC-3)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "flac",
+                "label": "FLAC (Free Lossless Audio Codec)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "g723_1",
+                "label": "G.723.1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gsm",
+                "label": "GSM (decoders: gsm libgsm ) (encoders: libgsm )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gsm_ms",
+                "label": "GSM Microsoft variant (decoders: gsm_ms libgsm_ms ) (encoders: libgsm_ms )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mlp",
+                "label": "MLP (Meridian Lossless Packing)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mp2",
+                "label": "MP2 (MPEG audio layer 2) (decoders: mp2 mp2float ) (encoders: mp2 mp2fixed libtwolame )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mp3",
+                "label": "MP3 (MPEG audio layer 3) (decoders: mp3float mp3 ) (encoders: libmp3lame libshine )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "nellymoser",
+                "label": "Nellymoser Asao",
+                "compression": "lossy"
+            },
+            {
+                "extension": "opus",
+                "label": "Opus (Opus Interactive Audio Codec) (decoders: opus libopus ) (encoders: opus libopus )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_alaw",
+                "label": "PCM A-law / G.711 A-law",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_dvd",
+                "label": "PCM signed 20|24-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f32be",
+                "label": "PCM 32-bit floating point big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f32le",
+                "label": "PCM 32-bit floating point little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f64be",
+                "label": "PCM 64-bit floating point big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_f64le",
+                "label": "PCM 64-bit floating point little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_mulaw",
+                "label": "PCM mu-law / G.711 mu-law",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pcm_s16be",
+                "label": "PCM signed 16-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s16be_planar",
+                "label": "PCM signed 16-bit big-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s16le",
+                "label": "PCM signed 16-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s16le_planar",
+                "label": "PCM signed 16-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24be",
+                "label": "PCM signed 24-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24daud",
+                "label": "PCM D-Cinema audio signed 24-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24le",
+                "label": "PCM signed 24-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s24le_planar",
+                "label": "PCM signed 24-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s32be",
+                "label": "PCM signed 32-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s32le",
+                "label": "PCM signed 32-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s32le_planar",
+                "label": "PCM signed 32-bit little-endian planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s64be",
+                "label": "PCM signed 64-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s64le",
+                "label": "PCM signed 64-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s8",
+                "label": "PCM signed 8-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_s8_planar",
+                "label": "PCM signed 8-bit planar",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u16be",
+                "label": "PCM unsigned 16-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u16le",
+                "label": "PCM unsigned 16-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u24be",
+                "label": "PCM unsigned 24-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u24le",
+                "label": "PCM unsigned 24-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u32be",
+                "label": "PCM unsigned 32-bit big-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u32le",
+                "label": "PCM unsigned 32-bit little-endian",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_u8",
+                "label": "PCM unsigned 8-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcm_vidc",
+                "label": "PCM Archimedes VIDC",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ra_144",
+                "label": "RealAudio 1.0 (14.4K) (decoders: real_144 ) (encoders: real_144 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "roq_dpcm",
+                "label": "DPCM id RoQ",
+                "compression": "lossy"
+            },
+            {
+                "extension": "s302m",
+                "label": "SMPTE 302M",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sbc",
+                "label": "SBC (low-complexity subband codec)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sonic",
+                "label": "Sonic",
+                "compression": null
+            },
+            {
+                "extension": "sonicls",
+                "label": "Sonic lossless",
+                "compression": null
+            },
+            {
+                "extension": "speex",
+                "label": "Speex (decoders: libspeex ) (encoders: libspeex )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "truehd",
+                "label": "TrueHD",
+                "compression": "lossless"
+            },
+            {
+                "extension": "tta",
+                "label": "TTA (True Audio)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "vorbis",
+                "label": "Vorbis (decoders: vorbis libvorbis ) (encoders: vorbis libvorbis )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wavpack",
+                "label": "WavPack (encoders: wavpack libwavpack )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmav1",
+                "label": "Windows Media Audio 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmav2",
+                "label": "Windows Media Audio 2",
+                "compression": "lossy"
+            }
+        ]
+    },
+    "video": {
+        "from": [
+            {
+                "extension": "012v",
+                "label": "Uncompressed 4:2:2 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "4xm",
+                "label": "4X Movie",
+                "compression": "lossy"
+            },
+            {
+                "extension": "8bps",
+                "label": "QuickTime 8BPS video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "aasc",
+                "label": "Autodesk RLE",
+                "compression": "lossless"
+            },
+            {
+                "extension": "agm",
+                "label": "Amuse Graphics Movie",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aic",
+                "label": "Apple Intermediate Codec",
+                "compression": "lossy"
+            },
+            {
+                "extension": "alias_pix",
+                "label": "Alias/Wavefront PIX image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "amv",
+                "label": "AMV Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "anm",
+                "label": "Deluxe Paint Animation",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ansi",
+                "label": "ASCII/ANSI art",
+                "compression": "lossy"
+            },
+            {
+                "extension": "apng",
+                "label": "APNG (Animated Portable Network Graphics) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "arbc",
+                "label": "Gryphon's Anim Compressor",
+                "compression": "lossy"
+            },
+            {
+                "extension": "asv1",
+                "label": "ASUS V1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "asv2",
+                "label": "ASUS V2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aura",
+                "label": "Auravision AURA",
+                "compression": "lossy"
+            },
+            {
+                "extension": "aura2",
+                "label": "Auravision Aura 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "av1",
+                "label": "Alliance for Open Media AV1 (decoders: libaom-av1 ) (encoders: libaom-av1 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "avrn",
+                "label": "Avid AVI Codec",
+                "compression": null
+            },
+            {
+                "extension": "avrp",
+                "label": "Avid 1:1 10-bit RGB Packer",
+                "compression": "lossless"
+            },
+            {
+                "extension": "avs",
+                "label": "AVS (Audio Video Standard) video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "avui",
+                "label": "Avid Meridien Uncompressed",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ayuv",
+                "label": "Uncompressed packed MS 4:4:4:4",
+                "compression": "lossless"
+            },
+            {
+                "extension": "bethsoftvid",
+                "label": "Bethesda VID video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "bfi",
+                "label": "Brute Force & Ignorance",
+                "compression": "lossy"
+            },
+            {
+                "extension": "binkvideo",
+                "label": "Bink video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "bintext",
+                "label": "Binary text",
+                "compression": null
+            },
+            {
+                "extension": "bitpacked",
+                "label": "Bitpacked",
+                "compression": "lossless"
+            },
+            {
+                "extension": "bmp",
+                "label": "BMP (Windows and OS/2 bitmap)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "bmv_video",
+                "label": "Discworld II BMV video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "brender_pix",
+                "label": "BRender PIX image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "c93",
+                "label": "Interplay C93",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cavs",
+                "label": "Chinese AVS (Audio Video Standard) (AVS1-P2, JiZhun profile)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cdgraphics",
+                "label": "CD Graphics video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cdxl",
+                "label": "Commodore CDXL video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cfhd",
+                "label": "Cineform HD",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cinepak",
+                "label": "Cinepak",
+                "compression": "lossy"
+            },
+            {
+                "extension": "clearvideo",
+                "label": "Iterated Systems ClearVideo",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cljr",
+                "label": "Cirrus Logic AccuPak",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cllc",
+                "label": "Canopus Lossless Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "cmv",
+                "label": "Electronic Arts CMV video (decoders: eacmv )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cpia",
+                "label": "CPiA video format",
+                "compression": null
+            },
+            {
+                "extension": "cscd",
+                "label": "CamStudio (decoders: camstudio )",
+                "compression": "lossless"
+            },
+            {
+                "extension": "cyuv",
+                "label": "Creative YUV (CYUV)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dds",
+                "label": "DirectDraw Surface image decoder",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dfa",
+                "label": "Chronomaster DFA",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dirac",
+                "label": "Dirac (encoders: vc2 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dnxhd",
+                "label": "VC3/DNxHD",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dpx",
+                "label": "DPX (Digital Picture Exchange) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "dsicinvideo",
+                "label": "Delphine Software International CIN video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dvvideo",
+                "label": "DV (Digital Video)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dxa",
+                "label": "Feeble Files/ScummVM DXA",
+                "compression": "lossless"
+            },
+            {
+                "extension": "dxtory",
+                "label": "Dxtory",
+                "compression": "lossless"
+            },
+            {
+                "extension": "dxv",
+                "label": "Resolume DXV",
+                "compression": "lossy"
+            },
+            {
+                "extension": "escape124",
+                "label": "Escape 124",
+                "compression": "lossy"
+            },
+            {
+                "extension": "escape130",
+                "label": "Escape 130",
+                "compression": "lossy"
+            },
+            {
+                "extension": "exr",
+                "label": "OpenEXR image",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ffv1",
+                "label": "FFmpeg video codec #1",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ffvhuff",
+                "label": "Huffyuv FFmpeg variant",
+                "compression": "lossless"
+            },
+            {
+                "extension": "fic",
+                "label": "Mirillis FIC",
+                "compression": "lossy"
+            },
+            {
+                "extension": "fits",
+                "label": "FITS (Flexible Image Transport System)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "flashsv",
+                "label": "Flash Screen Video v1",
+                "compression": "lossless"
+            },
+            {
+                "extension": "flashsv2",
+                "label": "Flash Screen Video v2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "flic",
+                "label": "Autodesk Animator Flic video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "flv1",
+                "label": "FLV / Sorenson Spark / Sorenson H.263 (Flash Video) (decoders: flv ) (encoders: flv )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "fmvc",
+                "label": "FM Screen Capture Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "fraps",
+                "label": "Fraps",
+                "compression": "lossless"
+            },
+            {
+                "extension": "frwu",
+                "label": "Forward Uncompressed",
+                "compression": "lossless"
+            },
+            {
+                "extension": "g2m",
+                "label": "Go2Meeting",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gdv",
+                "label": "Gremlin Digital Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gif",
+                "label": "CompuServe GIF (Graphics Interchange Format)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "h261",
+                "label": "H.261",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h263",
+                "label": "H.263 / H.263-1996, H.263+ / H.263-1998 / H.263 version 2 (decoders: h263 h263_v4l2m2m ) (encoders: h263 h263_v4l2m2m )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h263i",
+                "label": "Intel H.263",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h263p",
+                "label": "H.263+ / H.263-1998 / H.263 version 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h264",
+                "label": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (decoders: h264 h264_v4l2m2m h264_cuvid ) (encoders: libx264 libx264rgb h264_nvenc h264_omx h264_v4l2m2m h264_vaapi nvenc nvenc_h264 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hap",
+                "label": "Vidvox Hap",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hevc",
+                "label": "H.265 / HEVC (High Efficiency Video Coding) (decoders: hevc hevc_v4l2m2m hevc_cuvid ) (encoders: libx265 nvenc_hevc hevc_nvenc hevc_v4l2m2m hevc_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hnm4video",
+                "label": "HNM 4 video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hq_hqa",
+                "label": "Canopus HQ/HQA",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hqx",
+                "label": "Canopus HQX",
+                "compression": "lossy"
+            },
+            {
+                "extension": "huffyuv",
+                "label": "HuffYUV",
+                "compression": "lossless"
+            },
+            {
+                "extension": "hymt",
+                "label": "HuffYUV MT",
+                "compression": "lossless"
+            },
+            {
+                "extension": "idcin",
+                "label": "id Quake II CIN video (decoders: idcinvideo )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "idf",
+                "label": "iCEDraw text",
+                "compression": null
+            },
+            {
+                "extension": "iff_ilbm",
+                "label": "IFF ACBM/ANIM/DEEP/ILBM/PBM/RGB8/RGBN (decoders: iff )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "imm4",
+                "label": "Infinity IMM4",
+                "compression": "lossy"
+            },
+            {
+                "extension": "indeo2",
+                "label": "Intel Indeo 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "indeo3",
+                "label": "Intel Indeo 3",
+                "compression": "lossy"
+            },
+            {
+                "extension": "indeo4",
+                "label": "Intel Indeo Video Interactive 4",
+                "compression": "lossy"
+            },
+            {
+                "extension": "indeo5",
+                "label": "Intel Indeo Video Interactive 5",
+                "compression": "lossy"
+            },
+            {
+                "extension": "interplayvideo",
+                "label": "Interplay MVE video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "jpeg2000",
+                "label": "JPEG 2000 (decoders: jpeg2000 libopenjpeg ) (encoders: jpeg2000 libopenjpeg )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "jpegls",
+                "label": "JPEG-LS",
+                "compression": "lossy"
+            },
+            {
+                "extension": "jv",
+                "label": "Bitmap Brothers JV video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "kgv1",
+                "label": "Kega Game Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "kmvc",
+                "label": "Karl Morton's video codec",
+                "compression": "lossy"
+            },
+            {
+                "extension": "lagarith",
+                "label": "Lagarith lossless",
+                "compression": "lossless"
+            },
+            {
+                "extension": "loco",
+                "label": "LOCO",
+                "compression": "lossless"
+            },
+            {
+                "extension": "lscr",
+                "label": "LEAD Screen Capture",
+                "compression": "lossy"
+            },
+            {
+                "extension": "m101",
+                "label": "Matrox Uncompressed SD",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mad",
+                "label": "Electronic Arts Madcow Video (decoders: eamad )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "magicyuv",
+                "label": "MagicYUV video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mdec",
+                "label": "Sony PlayStation MDEC (Motion DECoder)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mimic",
+                "label": "Mimic",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mjpeg",
+                "label": "Motion JPEG (decoders: mjpeg mjpeg_cuvid ) (encoders: mjpeg mjpeg_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mjpegb",
+                "label": "Apple MJPEG-B",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mmvideo",
+                "label": "American Laser Games MM Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "motionpixels",
+                "label": "Motion Pixels video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mpeg1video",
+                "label": "MPEG-1 video (decoders: mpeg1video mpeg1_v4l2m2m mpeg1_cuvid )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mpeg2video",
+                "label": "MPEG-2 video (decoders: mpeg2video mpegvideo mpeg2_v4l2m2m mpeg2_cuvid ) (encoders: mpeg2video mpeg2_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mpeg4",
+                "label": "MPEG-4 part 2 (decoders: mpeg4 mpeg4_v4l2m2m mpeg4_cuvid ) (encoders: mpeg4 libxvid mpeg4_v4l2m2m )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msa1",
+                "label": "MS ATC Screen",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mscc",
+                "label": "Mandsoft Screen Capture Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "msmpeg4v1",
+                "label": "MPEG-4 part 2 Microsoft variant version 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msmpeg4v2",
+                "label": "MPEG-4 part 2 Microsoft variant version 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msmpeg4v3",
+                "label": "MPEG-4 part 2 Microsoft variant version 3 (decoders: msmpeg4 ) (encoders: msmpeg4 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msrle",
+                "label": "Microsoft RLE",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mss1",
+                "label": "MS Screen 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mss2",
+                "label": "MS Windows Media Video V9 Screen",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msvideo1",
+                "label": "Microsoft Video 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mszh",
+                "label": "LCL (LossLess Codec Library) MSZH",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mts2",
+                "label": "MS Expression Encoder Screen",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mvc1",
+                "label": "Silicon Graphics Motion Video Compressor 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mvc2",
+                "label": "Silicon Graphics Motion Video Compressor 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mwsc",
+                "label": "MatchWare Screen Capture Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mxpeg",
+                "label": "Mobotix MxPEG video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "nuv",
+                "label": "NuppelVideo/RTJPEG",
+                "compression": "lossy"
+            },
+            {
+                "extension": "paf_video",
+                "label": "Amazing Studio Packed Animation File Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pam",
+                "label": "PAM (Portable AnyMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pbm",
+                "label": "PBM (Portable BitMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcx",
+                "label": "PC Paintbrush PCX image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pgm",
+                "label": "PGM (Portable GrayMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pgmyuv",
+                "label": "PGMYUV (Portable GrayMap YUV) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pictor",
+                "label": "Pictor/PC Paint",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pixlet",
+                "label": "Apple Pixlet",
+                "compression": "lossy"
+            },
+            {
+                "extension": "png",
+                "label": "PNG (Portable Network Graphics) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ppm",
+                "label": "PPM (Portable PixelMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "prores",
+                "label": "Apple ProRes (iCodec Pro) (encoders: prores prores_aw prores_ks )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "prosumer",
+                "label": "Brooktree ProSumer Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "psd",
+                "label": "Photoshop PSD file",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ptx",
+                "label": "V.Flash PTX image",
+                "compression": "lossy"
+            },
+            {
+                "extension": "qdraw",
+                "label": "Apple QuickDraw",
+                "compression": "lossless"
+            },
+            {
+                "extension": "qpeg",
+                "label": "Q-team QPEG",
+                "compression": "lossy"
+            },
+            {
+                "extension": "qtrle",
+                "label": "QuickTime Animation (RLE) video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "r10k",
+                "label": "AJA Kona 10-bit RGB Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "r210",
+                "label": "Uncompressed RGB 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "rasc",
+                "label": "RemotelyAnywhere Screen Capture",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rawvideo",
+                "label": "raw video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "rl2",
+                "label": "RL2 video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "roq",
+                "label": "id RoQ video (decoders: roqvideo ) (encoders: roqvideo )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rpza",
+                "label": "QuickTime video (RPZA)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rscc",
+                "label": "innoHeim/Rsupport Screen Capture Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "rv10",
+                "label": "RealVideo 1.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rv20",
+                "label": "RealVideo 2.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rv30",
+                "label": "RealVideo 3.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rv40",
+                "label": "RealVideo 4.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sanm",
+                "label": "LucasArts SANM/SMUSH video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "scpr",
+                "label": "ScreenPressor",
+                "compression": "lossy"
+            },
+            {
+                "extension": "screenpresso",
+                "label": "Screenpresso",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sgi",
+                "label": "SGI image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sgirle",
+                "label": "SGI RLE 8-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sheervideo",
+                "label": "BitJazz SheerVideo",
+                "compression": "lossless"
+            },
+            {
+                "extension": "smackvideo",
+                "label": "Smacker video (decoders: smackvid )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "smc",
+                "label": "QuickTime Graphics (SMC)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "smvjpeg",
+                "label": "Sigmatel Motion Video",
+                "compression": null
+            },
+            {
+                "extension": "snow",
+                "label": "Snow",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sp5x",
+                "label": "Sunplus JPEG (SP5X)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "speedhq",
+                "label": "NewTek SpeedHQ",
+                "compression": "lossy"
+            },
+            {
+                "extension": "srgc",
+                "label": "Screen Recorder Gold Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "sunrast",
+                "label": "Sun Rasterfile image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "svg",
+                "label": "Scalable Vector Graphics (decoders: librsvg )",
+                "compression": "lossless"
+            },
+            {
+                "extension": "svq1",
+                "label": "Sorenson Vector Quantizer 1 / Sorenson Video 1 / SVQ1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "svq3",
+                "label": "Sorenson Vector Quantizer 3 / Sorenson Video 3 / SVQ3",
+                "compression": "lossy"
+            },
+            {
+                "extension": "targa",
+                "label": "Truevision Targa image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "targa_y216",
+                "label": "Pinnacle TARGA CineWave YUV16",
+                "compression": "lossless"
+            },
+            {
+                "extension": "tdsc",
+                "label": "TDSC",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tgq",
+                "label": "Electronic Arts TGQ video (decoders: eatgq )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tgv",
+                "label": "Electronic Arts TGV video (decoders: eatgv )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "theora",
+                "label": "Theora (encoders: libtheora )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "thp",
+                "label": "Nintendo Gamecube THP video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tiertexseqvideo",
+                "label": "Tiertex Limited SEQ video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tiff",
+                "label": "TIFF image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "tmv",
+                "label": "8088flex TMV",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tqi",
+                "label": "Electronic Arts TQI video (decoders: eatqi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "truemotion1",
+                "label": "Duck TrueMotion 1.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "truemotion2",
+                "label": "Duck TrueMotion 2.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "truemotion2rt",
+                "label": "Duck TrueMotion 2.0 Real Time",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tscc",
+                "label": "TechSmith Screen Capture Codec (decoders: camtasia )",
+                "compression": "lossless"
+            },
+            {
+                "extension": "tscc2",
+                "label": "TechSmith Screen Codec 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "txd",
+                "label": "Renderware TXD (TeXture Dictionary) image",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ulti",
+                "label": "IBM UltiMotion (decoders: ultimotion )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "utvideo",
+                "label": "Ut Video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v210",
+                "label": "Uncompressed 4:2:2 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v210x",
+                "label": "Uncompressed 4:2:2 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v308",
+                "label": "Uncompressed packed 4:4:4",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v408",
+                "label": "Uncompressed packed QT 4:4:4:4",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v410",
+                "label": "Uncompressed 4:4:4 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "vb",
+                "label": "Beam Software VB",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vble",
+                "label": "VBLE Lossless Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "vc1",
+                "label": "SMPTE VC-1 (decoders: vc1 vc1_v4l2m2m vc1_cuvid )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vc1image",
+                "label": "Windows Media Video 9 Image v2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vcr1",
+                "label": "ATI VCR1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vixl",
+                "label": "Miro VideoXL (decoders: xl )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vmdvideo",
+                "label": "Sierra VMD video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vmnc",
+                "label": "VMware Screen Codec / VMware Video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "vp3",
+                "label": "On2 VP3",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp4",
+                "label": "On2 VP4",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp5",
+                "label": "On2 VP5",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp6",
+                "label": "On2 VP6",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp6a",
+                "label": "On2 VP6 (Flash version, with alpha channel)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp6f",
+                "label": "On2 VP6 (Flash version)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp7",
+                "label": "On2 VP7",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp8",
+                "label": "On2 VP8 (decoders: vp8 vp8_v4l2m2m libvpx vp8_cuvid ) (encoders: libvpx vp8_v4l2m2m vp8_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp9",
+                "label": "Google VP9 (decoders: vp9 vp9_v4l2m2m libvpx-vp9 vp9_cuvid ) (encoders: libvpx-vp9 vp9_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wcmv",
+                "label": "WinCAM Motion Video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "webp",
+                "label": "WebP (encoders: libwebp_anim libwebp )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmv1",
+                "label": "Windows Media Video 7",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmv2",
+                "label": "Windows Media Video 8",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmv3",
+                "label": "Windows Media Video 9",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmv3image",
+                "label": "Windows Media Video 9 Image",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wnv1",
+                "label": "Winnov WNV1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wrapped_avframe",
+                "label": "AVFrame to AVPacket passthrough",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ws_vqa",
+                "label": "Westwood Studios VQA (Vector Quantized Animation) video (decoders: vqavideo )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xan_wc3",
+                "label": "Wing Commander III / Xan",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xan_wc4",
+                "label": "Wing Commander IV / Xxan",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xbin",
+                "label": "eXtended BINary text",
+                "compression": null
+            },
+            {
+                "extension": "xbm",
+                "label": "XBM (X BitMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "xface",
+                "label": "X-face image",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xpm",
+                "label": "XPM (X PixMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "xwd",
+                "label": "XWD (X Window Dump) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "y41p",
+                "label": "Uncompressed YUV 4:1:1 12-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ylc",
+                "label": "YUY2 Lossless Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "yop",
+                "label": "Psygnosis YOP Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "yuv4",
+                "label": "Uncompressed packed 4:2:0",
+                "compression": "lossless"
+            },
+            {
+                "extension": "zerocodec",
+                "label": "ZeroCodec Lossless Video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "zlib",
+                "label": "LCL (LossLess Codec Library) ZLIB",
+                "compression": "lossless"
+            },
+            {
+                "extension": "zmbv",
+                "label": "Zip Motion Blocks Video",
+                "compression": "lossless"
+            }
+        ],
+        "to": [
+            {
+                "extension": "a64_multi",
+                "label": "Multicolor charset for Commodore 64 (encoders: a64multi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "a64_multi5",
+                "label": "Multicolor charset for Commodore 64, extended with 5th color (colram) (encoders: a64multi5 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "alias_pix",
+                "label": "Alias/Wavefront PIX image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "amv",
+                "label": "AMV Video",
+                "compression": "lossy"
+            },
+            {
+                "extension": "apng",
+                "label": "APNG (Animated Portable Network Graphics) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "asv1",
+                "label": "ASUS V1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "asv2",
+                "label": "ASUS V2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "av1",
+                "label": "Alliance for Open Media AV1 (decoders: libaom-av1 ) (encoders: libaom-av1 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "avrp",
+                "label": "Avid 1:1 10-bit RGB Packer",
+                "compression": "lossless"
+            },
+            {
+                "extension": "avui",
+                "label": "Avid Meridien Uncompressed",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ayuv",
+                "label": "Uncompressed packed MS 4:4:4:4",
+                "compression": "lossless"
+            },
+            {
+                "extension": "bmp",
+                "label": "BMP (Windows and OS/2 bitmap)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "cinepak",
+                "label": "Cinepak",
+                "compression": "lossy"
+            },
+            {
+                "extension": "cljr",
+                "label": "Cirrus Logic AccuPak",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dirac",
+                "label": "Dirac (encoders: vc2 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dnxhd",
+                "label": "VC3/DNxHD",
+                "compression": "lossy"
+            },
+            {
+                "extension": "dpx",
+                "label": "DPX (Digital Picture Exchange) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "dvvideo",
+                "label": "DV (Digital Video)",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ffv1",
+                "label": "FFmpeg video codec #1",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ffvhuff",
+                "label": "Huffyuv FFmpeg variant",
+                "compression": "lossless"
+            },
+            {
+                "extension": "fits",
+                "label": "FITS (Flexible Image Transport System)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "flashsv",
+                "label": "Flash Screen Video v1",
+                "compression": "lossless"
+            },
+            {
+                "extension": "flashsv2",
+                "label": "Flash Screen Video v2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "flv1",
+                "label": "FLV / Sorenson Spark / Sorenson H.263 (Flash Video) (decoders: flv ) (encoders: flv )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "gif",
+                "label": "CompuServe GIF (Graphics Interchange Format)",
+                "compression": "lossless"
+            },
+            {
+                "extension": "h261",
+                "label": "H.261",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h263",
+                "label": "H.263 / H.263-1996, H.263+ / H.263-1998 / H.263 version 2 (decoders: h263 h263_v4l2m2m ) (encoders: h263 h263_v4l2m2m )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h263p",
+                "label": "H.263+ / H.263-1998 / H.263 version 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "h264",
+                "label": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (decoders: h264 h264_v4l2m2m h264_cuvid ) (encoders: libx264 libx264rgb h264_nvenc h264_omx h264_v4l2m2m h264_vaapi nvenc nvenc_h264 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hap",
+                "label": "Vidvox Hap",
+                "compression": "lossy"
+            },
+            {
+                "extension": "hevc",
+                "label": "H.265 / HEVC (High Efficiency Video Coding) (decoders: hevc hevc_v4l2m2m hevc_cuvid ) (encoders: libx265 nvenc_hevc hevc_nvenc hevc_v4l2m2m hevc_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "huffyuv",
+                "label": "HuffYUV",
+                "compression": "lossless"
+            },
+            {
+                "extension": "jpeg2000",
+                "label": "JPEG 2000 (decoders: jpeg2000 libopenjpeg ) (encoders: jpeg2000 libopenjpeg )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "jpegls",
+                "label": "JPEG-LS",
+                "compression": "lossy"
+            },
+            {
+                "extension": "ljpeg",
+                "label": "Lossless JPEG",
+                "compression": "lossless"
+            },
+            {
+                "extension": "magicyuv",
+                "label": "MagicYUV video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "mjpeg",
+                "label": "Motion JPEG (decoders: mjpeg mjpeg_cuvid ) (encoders: mjpeg mjpeg_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mpeg1video",
+                "label": "MPEG-1 video (decoders: mpeg1video mpeg1_v4l2m2m mpeg1_cuvid )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mpeg2video",
+                "label": "MPEG-2 video (decoders: mpeg2video mpegvideo mpeg2_v4l2m2m mpeg2_cuvid ) (encoders: mpeg2video mpeg2_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "mpeg4",
+                "label": "MPEG-4 part 2 (decoders: mpeg4 mpeg4_v4l2m2m mpeg4_cuvid ) (encoders: mpeg4 libxvid mpeg4_v4l2m2m )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msmpeg4v2",
+                "label": "MPEG-4 part 2 Microsoft variant version 2",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msmpeg4v3",
+                "label": "MPEG-4 part 2 Microsoft variant version 3 (decoders: msmpeg4 ) (encoders: msmpeg4 )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "msvideo1",
+                "label": "Microsoft Video 1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "pam",
+                "label": "PAM (Portable AnyMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pbm",
+                "label": "PBM (Portable BitMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pcx",
+                "label": "PC Paintbrush PCX image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pgm",
+                "label": "PGM (Portable GrayMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "pgmyuv",
+                "label": "PGMYUV (Portable GrayMap YUV) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "png",
+                "label": "PNG (Portable Network Graphics) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "ppm",
+                "label": "PPM (Portable PixelMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "prores",
+                "label": "Apple ProRes (iCodec Pro) (encoders: prores prores_aw prores_ks )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "qtrle",
+                "label": "QuickTime Animation (RLE) video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "r10k",
+                "label": "AJA Kona 10-bit RGB Codec",
+                "compression": "lossless"
+            },
+            {
+                "extension": "r210",
+                "label": "Uncompressed RGB 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "rawvideo",
+                "label": "raw video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "roq",
+                "label": "id RoQ video (decoders: roqvideo ) (encoders: roqvideo )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rv10",
+                "label": "RealVideo 1.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "rv20",
+                "label": "RealVideo 2.0",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sgi",
+                "label": "SGI image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "snow",
+                "label": "Snow",
+                "compression": "lossy"
+            },
+            {
+                "extension": "sunrast",
+                "label": "Sun Rasterfile image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "svq1",
+                "label": "Sorenson Vector Quantizer 1 / Sorenson Video 1 / SVQ1",
+                "compression": "lossy"
+            },
+            {
+                "extension": "targa",
+                "label": "Truevision Targa image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "theora",
+                "label": "Theora (encoders: libtheora )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "tiff",
+                "label": "TIFF image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "utvideo",
+                "label": "Ut Video",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v210",
+                "label": "Uncompressed 4:2:2 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v308",
+                "label": "Uncompressed packed 4:4:4",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v408",
+                "label": "Uncompressed packed QT 4:4:4:4",
+                "compression": "lossless"
+            },
+            {
+                "extension": "v410",
+                "label": "Uncompressed 4:4:4 10-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "vp8",
+                "label": "On2 VP8 (decoders: vp8 vp8_v4l2m2m libvpx vp8_cuvid ) (encoders: libvpx vp8_v4l2m2m vp8_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "vp9",
+                "label": "Google VP9 (decoders: vp9 vp9_v4l2m2m libvpx-vp9 vp9_cuvid ) (encoders: libvpx-vp9 vp9_vaapi )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "webp",
+                "label": "WebP (encoders: libwebp_anim libwebp )",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmv1",
+                "label": "Windows Media Video 7",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wmv2",
+                "label": "Windows Media Video 8",
+                "compression": "lossy"
+            },
+            {
+                "extension": "wrapped_avframe",
+                "label": "AVFrame to AVPacket passthrough",
+                "compression": "lossless"
+            },
+            {
+                "extension": "xbm",
+                "label": "XBM (X BitMap) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "xface",
+                "label": "X-face image",
+                "compression": "lossy"
+            },
+            {
+                "extension": "xwd",
+                "label": "XWD (X Window Dump) image",
+                "compression": "lossless"
+            },
+            {
+                "extension": "y41p",
+                "label": "Uncompressed YUV 4:1:1 12-bit",
+                "compression": "lossless"
+            },
+            {
+                "extension": "yuv4",
+                "label": "Uncompressed packed 4:2:0",
+                "compression": "lossless"
+            },
+            {
+                "extension": "zlib",
+                "label": "LCL (LossLess Codec Library) ZLIB",
+                "compression": "lossless"
+            },
+            {
+                "extension": "zmbv",
+                "label": "Zip Motion Blocks Video",
+                "compression": "lossless"
+            }
+        ]
+    }
+}

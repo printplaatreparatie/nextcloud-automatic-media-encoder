@@ -40,6 +40,8 @@ class BackgroundJob extends QueuedJob
 
     public function run($arguments)
     {
+        parent::run($arguments);
+
         $this->userId = $arguments['user_id'];
     }
 
@@ -85,9 +87,9 @@ class BackgroundJob extends QueuedJob
         ];
     }
 
-    protected function getConversionRules($type)
+    protected function getConversionRules()
     {
-        $json = $this->getConfigValue("{$type}_conversion_rules");
+        $json = $this->getConfigValue("video_conversion_rules");
         
         if (empty($json)) {
             return null;
