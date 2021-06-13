@@ -4,18 +4,7 @@
 			<img src="/apps/automaticmediaencoder/img/icon.svg">
 			{{ ta('Automatic Media Encoder') }}
 		</h2>
-		<encoder-status :status-message="state.status_message" :status-error="state.status_error" />
-
-		<h2>{{ ta('Settings') }}</h2>
-		<div class="checkbox">
-			<input v-model="videoConversionEnabled" type="checkbox"> <span>Enable Video Conversion</span>
-		</div>
-		<div class="checkbox">
-			<input v-model="photoConversionEnabled" type="checkbox"> <span>Enable Photo Conversion</span>
-		</div>
-		<div class="checkbox">
-			<input v-model="audioConversionEnabled" type="checkbox"> <span>Enable Audio Conversion</span>
-		</div>
+		<EncoderStatus :status-message="state.status_message" :status-error="state.status_error" />
 	</div>
 </template>
 
@@ -26,8 +15,12 @@ import { generateUrl } from '@nextcloud/router'
 import axios from '@nextcloud/axios'
 import { loadState } from '@nextcloud/initial-state'
 
+import EncoderStatus from '../components/EncoderStatus.vue'
+
 export default {
 	name: 'AdminSettings',
+
+	components: { EncoderStatus },
 
 	data: () => ({
 		state: loadState('automaticmediaencoder', 'admin-config'),

@@ -1,56 +1,47 @@
 const { EOL } = require('os')
-const fs = require('fs')
+const fs = require('fs/promises')
 
-fs.readFile('./ffmpeg-formats.txt', 'utf-8', (err, data) => {
-	if (err) {
-		console.error(err)
-		return
-	}
+class FFMpegOptionsGenerator {
 
-	const media = {
-		photo: { from: [], to: [] },
-		audio: { from: [], to: [] },
-		video: { from: [], to: [] },
-	}
+	codecs = [];
+	formats = [];
 
-	data.split(EOL).forEach((line, index) => {
-		line = line.trim()
-		const flags = line.substring(0, 6)
-		const pieces = line.replace(flags, '').trim().split(' ')
-		const extension = pieces[0].trim()
-		const label = pieces.slice(1).join(' ').trim()
+	async generate() {
+		await this.loadFormats()
 
-		const format = {
-			extension,
-			label,
-			compression: flags[4] === 'L' ? 'lossy' : flags[5] === 'S' ? 'lossless' : null,
-		}
-
-		if (flags[0] === 'D') {
-			if (flags[2] === 'V') {
-				media.video.from.push(format)
-			}
-			if (flags[2] === 'A') {
-				media.audio.from.push(format)
-			}
-		}
-
-		if (flags[1] === 'E') {
-			if (flags[2] === 'V') {
-				media.video.to.push(format)
-			}
-			if (flags[2] === 'A') {
-				media.audio.to.push(format)
-			}
-		}
-	})
-
-	fs.writeFile('formats.json', JSON.stringify(media, null, 4), (err) => {
-		if (err) {
-			console.error(err)
-			return
-		}
+		await fs.writeFile('formats.json', JSON.stringify(this.formats, null, 4))
 
 		console.log('done')
-	})
-})
+	}
+
+	async loadFormats() {
+		const lines = await fs.readFile('./ffmpeg-formats.txt', 'utf-8')
+
+		this.formats = lines.split(EOL).reduce((formats, line) => {
+			const [extensions, ...labelPieces] = line.slice(4).split(' ')
+			const label = labelPieces.join(' ').trim()
+			extensions.split(',').forEach(extension => {
+				formats[extension] = {
+					...formats[extension],
+					label,
+					...(line[1] === 'D' ? { decode: true } : null),
+					...(line[2] === 'E' ? { encode: true } : null),
+				}
+			})
+
+			return formats
+		}, {})
+
+		this.formats = Object.entries(this.formats)
+		this.formats.sort(([a], [b]) => a.localeCompare(b))
+		this.formats = this.formats.map(([extension, { decode = false, encode = false, label = '' }]) => ({
+			extension,
+			decode,
+			encode,
+			label,
+		})).filter(f => f.label)
+	}
+
+}
+
+new FFMpegOptionsGenerator().generate()

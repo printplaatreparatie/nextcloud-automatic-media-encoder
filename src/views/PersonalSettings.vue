@@ -1,44 +1,16 @@
 <template>
-	<div class="automc-personal-settings">
-		<h2>
-			<a class="icon icon-media" />
-			{{ ta('Automatic Media Encoder') }}
-		</h2>
+	<div>
+		<SettingsSection title="Automatic Media Encoder" description="Configure rules to automatically convert your media as it is uploaded.">
+			<EncoderStatus :status-message="state.status_message" :status-error="state.status_error" />
 
-		<encoder-status :status-message="state.status_message" :status-error="state.status_error" />
-
-		<section class="automc-conversion-rules">
-			<h2>{{ ta('Video Conversion Rules') }}</h2>
+			<h2>{{ ta('Conversion Rules') }}</h2>
 			<ConversionRuleList
-				media-type="video"
-				:conversion-rules="state.video_conversion_rules"
-				:from-formats="state.video_from_formats"
-				:to-formats="state.video_to_formats"
-				@change="updateConversionRule"
-				@addRule="() => addConversionRule('video')" />
-		</section>
-
-		<section class="automc-conversion-rules">
-			<h2>{{ ta('Photo Conversion Rules') }}</h2>
-			<ConversionRuleList
-				media-type="photo"
-				:conversion-rules="state.photo_conversion_rules"
-				:from-formats="state.photo_from_formats"
-				:to-formats="state.photo_to_formats"
-				@change="updateConversionRule"
-				@addRule="() => addConversionRule('photo')" />
-		</section>
-
-		<section class="automc-conversion-rules">
-			<h2>{{ ta('Audio Conversion Rules') }}</h2>
-			<ConversionRuleList
-				media-type="audio"
-				:conversion-rules="state.audio_conversion_rules"
-				:from-formats="state.audio_from_formats"
-				:to-formats="state.audio_to_formats"
-				@change="updateConversionRule"
-				@addRule="() => addConversionRule('photo')" />
-		</section>
+				:rules="state.rules"
+				:formats="state.formats"
+				@changeRule="updateConversionRule"
+				@addRule="addConversionRule"
+				@removeRule="removeConversionRule" />
+		</SettingsSection>
 	</div>
 </template>
 
@@ -48,12 +20,14 @@ import { showError } from '@nextcloud/dialogs'
 import { generateUrl } from '@nextcloud/router'
 import axios from '@nextcloud/axios'
 import { loadState } from '@nextcloud/initial-state'
+import SettingsSection from '@nextcloud/vue/dist/Components/SettingsSection'
 
+import EncoderStatus from '../components/EncoderStatus.vue'
 import ConversionRuleList from '../components/ConversionRuleList.vue'
 import { generateUniqueId } from '../utils'
 
 export default {
-	components: { ConversionRuleList },
+	components: { ConversionRuleList, EncoderStatus, SettingsSection },
 
 	data: () => ({
 		state: loadState('automaticmediaencoder', 'user-config'),
@@ -62,9 +36,8 @@ export default {
 	}),
 
 	methods: {
-		addConversionRule: debounce(function(mediaType) {
-			const key = `${mediaType}_conversion_rules`
-			this.state[key].push({
+		addConversionRule: debounce(function() {
+			this.state.rules.push({
 				id: generateUniqueId(),
 				source_directory: null,
 				from_format: null,
@@ -75,16 +48,36 @@ export default {
 			this.saveConfig()
 		}, 600),
 
-		updateConversionRule: debounce(function({ mediaType, rule }) {
-			const key = `${mediaType}_conversion_rules`
-			this.state[key] = this.state[key].map(r => r.id === rule.id ? rule : r)
+		updateConversionRule: debounce(function(rule) {
+			this.state.rules = this.state.rules.map(r => r.id === rule.id ? rule : r)
 			this.saveConfig()
 		}, 600),
+
+		removeConversionRule(rule) {
+			OC.dialogs.confirmDestructive(
+				'All queued and running conversions for this rule will be cancelled.',
+				'Delete Rule',
+				{
+					type: OC.dialogs.YES_NO_BUTTONS,
+					confirm: 'Delete',
+					confirmClasses: 'error',
+					cancel: 'Cancel',
+				},
+				(confirmed) => {
+					if (!confirmed) return
+
+					this.state.rules = this.state.rules.filter(r => r.id !== rule.id)
+
+					return this.saveConfig()
+				},
+				true
+			)
+		},
 
 		async saveConfig() {
 			try {
 				this.saving = true
-				await axios.put(generateUrl('/apps/automaticmediaencoder/config'), this.state)
+				await axios.put(generateUrl('/apps/automaticmediaencoder/config'), { values: { rules: this.state.rules } })
 			} catch (e) {
 				showError(this.ta('Failed to save automatic media encoder config'))
 				console.error(e)

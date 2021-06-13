@@ -1,18 +1,21 @@
 <template>
-	<div>
-		<div v-if="!conversionRules.length" class="notification">
-			{{ ta(`There are no ${mediaType} conversion rules, click "+ Add" to get started.`) }}
+	<div class="automc-conversion-rule-list">
+		<div v-if="!rules.length" class="alert">
+			{{ ta(`There are no conversion rules, click "+ Add" to get started.`) }}
 		</div>
 		<ul class="automc-conversion-rules__list">
-			<li v-for="(rule, i) in conversionRules" :key="i">
+			<li v-for="(rule, i) in rules" :key="i">
 				<ConversionRule
 					:rule="rule"
 					:from-formats="fromFormats"
 					:to-formats="toFormats"
-					@change="onRuleChange" />
+					@change="$emit('changeRule', $event)"
+					@remove="$emit('removeRule', rule)" />
 			</li>
-			<li class="add" @click="$emit('addRule')">
-				+ {{ ta('Add Conversion Rule') }}
+			<li class="add">
+				<button @click="$emit('addRule')">
+					<span class="icon icon-add" /> Add Conversion Rule
+				</button>
 			</li>
 		</ul>
 	</div>
@@ -25,27 +28,23 @@ export default {
 	components: { ConversionRule },
 
 	props: {
-		mediaType: {
-			required: true,
-			type: String,
-		},
-		conversionRules: {
+		rules: {
 			required: true,
 			type: Array,
 		},
-		fromFormats: {
-			required: true,
-			type: Array,
-		},
-		toFormats: {
+		formats: {
 			required: true,
 			type: Array,
 		},
 	},
 
-	methods: {
-		onRuleChange(rule) {
-			this.$emit('change', { mediaType: this.mediaType, rule })
+	computed: {
+		fromFormats() {
+			return this.formats.filter(f => f.decode)
+		},
+
+		toFormats() {
+			return this.formats.filter(f => f.encode)
 		},
 	},
 }

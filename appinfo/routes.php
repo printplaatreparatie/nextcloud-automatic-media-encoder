@@ -9,6 +9,8 @@
  */
 return [
     'routes' => [
-	   ['name' => 'settings#index', 'url' => '/', 'verb' => 'GET'],
+        ['name' => 'config#getAdminConfig', 'url' => '/config', 'verb' => 'GET'],
+        ['name' => 'config#getConfig', 'url' => '/config', 'verb' => 'GET'],
+	    ['name' => 'config#setConfig', 'url' => '/config', 'verb' => 'PUT']
     ]
 ];

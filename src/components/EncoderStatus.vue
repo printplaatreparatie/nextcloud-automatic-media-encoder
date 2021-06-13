@@ -1,12 +1,10 @@
 <template>
 	<section class="automc-status">
-		<h2>{{ t('Status') }}</h2>
-
-		<span v-if="statusMessage" class="automc-settings-personal-status__message">
-			{{ statusMessage }}
+		<span v-if="statusMessage" class="automc-status__message">
+			<strong>Status:</strong> {{ statusMessage }}
 		</span>
-		<span v-if="statusError" class="automc-settings-personal-status__error">
-			{{ statusError }}
+		<span v-if="statusError" class="automc-status__error">
+			<strong>Error:</strong> {{ statusError }}
 		</span>
 	</section>
 </template>
@@ -27,3 +25,15 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss">
+.automc-status {
+	margin-bottom: 1em;
+	&__message {
+		color: green;
+	}
+	&__error {
+		color: red;
+	}
+}
+</style>

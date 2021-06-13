@@ -2,64 +2,48 @@
 
 namespace OCA\AutomaticMediaEncoder\BackgroundJob;
 
-use FFMpeg\FFMpeg;
-use OCP\BackgroundJob\QueuedJob;
-use OCP\AppFramework\Utility\ITimeFactory;
-use OCP\BackgroundJob\IJobList;
 use OCP\Files\File;
-use OCP\Files\IRootFolder;
-use OCP\IConfig;
-use OCP\IL10N;
-use Psr\Log\LoggerInterface;
-use OCP\Notification\IManager as INotificationManager;
 
 class ConvertVideojob extends BackgroundJob
 {
-    public function __construct(
-        string $appName,
-        ITimeFactory $timeFactory,
-        IConfig $config,
-        IL10N $l10n,
-        IRootFolder $rootFolder,
-        LoggerInterface $logger,
-        INotificationManager $notificationManager
-    ) {
-        parent::__construct($timeFactory, $appName, $config, $l10n, $rootFolder, $logger, $notificationManager);
-    }
-
     public function run($arguments)
     {
-        ['user_id' => $userId, 'video_id' => $videoId, 'rule' => $rule] = $arguments;
+        parent::run($arguments);
 
-        $videos = $this->rootFolder->getUserFolder($userId)->getById($videoId);
-        /** @var File */
-        $originalVideo = $videos instanceof File ? $videos : reset($videos);
-        $originalVideoSourcePath = $originalVideo->getStorage()->getLocalFile($originalVideo->getPath());
-        
-        $ffmpeg = FFMpeg::create();
-        $video = $ffmpeg->open($originalVideoSourcePath);
-        $video->save()
-        
-        $sharedVideos = is_array($videos) ? array_slice($videos, 1) : [];
+        try {
+            ['user_id' => $userId, 'source_file_id' => $sourceFileId, 'rule' => $rule] = $arguments;
 
-        // call ffmpeg 
-        // `ffmpeg -i $video ${medium/*.$rule['source_extension']/.$rule['destination_extension']}`
+            $sourceFiles = $this->rootFolder->getUserFolder($userId)->getById($sourceFileId);
+            $sourceFile = $sourceFiles instanceof File ? $sourceFiles : reset($sourceFiles);
+            
+            // the following statement may create a temporary file
+            $sourcePath = $sourceFile->getStorage()->getLocalFile($sourceFile->getPath()); 
+            
+            $outputPath = str_replace($sourcePath, ".{$rule['from_format']['extension']}", ".{$rule['to_format']['extension']}"); // may be a temporary directory
+            
+            $this->runProcess("ffmpeg -i $sourcePath -c $outputPath");
 
-        $option = $rule['afterConvertOption'];
+            $destinationStream = $sourceFile->getParent()->newFile(basename($outputPath))->fopen('w'); // may be a temporary file
 
-        if ($option === 'keep') {
-            return;
+            stream_copy_to_stream(fopen($outputPath, 'r'), $destinationStream); // write temporary file to source file's parent directory
+
+            if (is_resource($destinationStream)) {
+                fclose($destinationStream);
+            }
+
+            switch ($rule['postEncodeRule']) {
+                case 'delete':
+                    $this->deleteVideo($sourceFile, $rule);
+                    break;
+                case 'move':
+                    $this->moveVideo($sourceFile, $rule);
+                    break;
+                default: // including 'keep'
+                    break;
+            }
+        } catch (\Throwable $e) {
+            $this->handleError($e);
         }
-
-        if ($option === 'delete') {
-            $this->deleteVideo($video, $rule);
-        }
-
-        if ($option === 'move') {
-            $this->moveVideo($video, $rule);
-        }
-
-        $this->scanUserFiles();
     }
 
     private function deleteVideo($video, $rule)
@@ -70,5 +54,14 @@ class ConvertVideojob extends BackgroundJob
     private function moveVideo($video, $rule)
     {
         // move $video to $rule['moveMediaDirectory'];
+    }
+
+    private function writeUserFile($userFolder, $filename, $content)
+    {
+        if (!$userFolder->nodeExists($filename)) {
+            $userFolder->touch($filename);
+        }
+        $file = $userFolder->get($filename);
+        $file->putContent($content);
     }
 }

@@ -1,47 +1,19 @@
 <?php
 
-namespace OCA\AutomaticMediaEncoder\Controllers;
+namespace OCA\AutomaticMediaEncoder\Controller;
 
-use OCA\AutomaticMediaEncoder\AppInfo\Application;
-use OCP\App\IAppManager;
+use OCA\AutomaticMediaEncoder\Service\ConfigService;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\DataResponse;
-use OCP\Files\IAppData;
-use OCP\IConfig;
-use OCP\IDBConnection;
-use OCP\IL10N;
 use OCP\IRequest;
-use OCP\IServerContainer;
-use OCP\IURLGenerator;
-use Psr\Log\LoggerInterface;
 
 class ConfigController extends Controller
 {
-    private $userId;
-    private $config;
+    private ConfigService $configService;
 
-    public function __construct(
-        $AppName,
-        IRequest $request,
-        IServerContainer $serverContainer,
-        IConfig $config,
-        IAppData $appData,
-        IDBConnection $dbConnection,
-        IURLGenerator $urlGenerator,
-        IL10N $l,
-        LoggerInterface $logger,
-        $userId
-    ) {
+    public function __construct($AppName, IRequest $request, ConfigService $configService) {
         parent::__construct($AppName, $request);
-        $this->l = $l;
-        $this->appName = $AppName;
-        $this->userId = $userId;
-        $this->appData = $appData;
-        $this->serverContainer = $serverContainer;
-        $this->config = $config;
-        $this->dbConnection = $dbConnection;
-        $this->urlGenerator = $urlGenerator;
-        $this->logger = $logger;
+        $this->configService = $configService;
     }
 
     /**
@@ -49,13 +21,27 @@ class ConfigController extends Controller
      */
     public function setConfig(array $values): DataResponse
     {
-        foreach (['video', 'photo', 'audio'] as $mediaType) {
-            $conversionRulesKey = "{$mediaType}_conversion_rules";
-            if (isset($values[$conversionRulesKey])) {
-                $this->config->setUserValue($this->userId, Application::APP_ID, $conversionRulesKey, $values[$conversionRulesKey]);
-            }
+        if (isset($values['rules'])) {
+            $this->configService->setCurrentUserValueJson('rules', $values['rules']);
         }
 
-        return new DataResponse();
+        return $this->getConfig();
+    }
+
+    /**
+     * @NoAdminRequired
+     */
+    public function getConfig(): DataResponse
+    {
+        return new DataResponse([
+            'rules' => $this->configService->getCurrentUserConfig()
+        ]);
+    }
+
+    public function getAdminConfig(): DataResponse
+    {
+        return new DataResponse([
+            'rules' => $this->configService->getAdminConfig()
+        ]);
     }
 }
