@@ -4,7 +4,6 @@
 			<img src="/apps/automaticmediaencoder/img/icon.svg">
 			{{ ta('Automatic Media Encoder') }}
 		</h2>
-		<EncoderStatus :status-message="state.status_message" :status-error="state.status_error" />
 	</div>
 </template>
 
@@ -15,12 +14,8 @@ import { generateUrl } from '@nextcloud/router'
 import axios from '@nextcloud/axios'
 import { loadState } from '@nextcloud/initial-state'
 
-import EncoderStatus from '../components/EncoderStatus.vue'
-
 export default {
 	name: 'AdminSettings',
-
-	components: { EncoderStatus },
 
 	data: () => ({
 		state: loadState('automaticmediaencoder', 'admin-config'),

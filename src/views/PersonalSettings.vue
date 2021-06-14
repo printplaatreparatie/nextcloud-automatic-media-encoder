@@ -1,7 +1,10 @@
 <template>
 	<div>
 		<SettingsSection title="Automatic Media Encoder" description="Configure rules to automatically convert your media as it is uploaded.">
-			<EncoderStatus :status-message="state.status_message" :status-error="state.status_error" />
+			<h2>{{ ta('Status') }}</h2>
+			<div>
+				<PersonalStatus :statistics="state.statistics" />
+			</div>
 
 			<h2>{{ ta('Conversion Rules') }}</h2>
 			<ConversionRuleList
@@ -22,12 +25,12 @@ import axios from '@nextcloud/axios'
 import { loadState } from '@nextcloud/initial-state'
 import SettingsSection from '@nextcloud/vue/dist/Components/SettingsSection'
 
-import EncoderStatus from '../components/EncoderStatus.vue'
+import PersonalStatus from '../components/PersonalStatus.vue'
 import ConversionRuleList from '../components/ConversionRuleList.vue'
 import { generateUniqueId } from '../utils'
 
 export default {
-	components: { ConversionRuleList, EncoderStatus, SettingsSection },
+	components: { PersonalStatus, ConversionRuleList, SettingsSection },
 
 	data: () => ({
 		state: loadState('automaticmediaencoder', 'user-config'),

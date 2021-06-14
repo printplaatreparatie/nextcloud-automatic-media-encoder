@@ -30,4 +30,7 @@
         <personal>OCA\AutomaticMediaEncoder\Settings\PersonalSettings</personal>
         <personal-section>OCA\AutomaticMediaEncoder\Settings\PersonalSection</personal-section>
     </settings>
+    <background-jobs>
+        <job>OCA\AutomaticMediaEncoder\BackgroundJob\FindNewMediaJob</job>
+    </background-jobs>
 </info>
