@@ -11,7 +11,8 @@ class ConfigController extends Controller
 {
     private ConfigService $configService;
 
-    public function __construct($AppName, IRequest $request, ConfigService $configService) {
+    public function __construct($AppName, IRequest $request, ConfigService $configService)
+    {
         parent::__construct($AppName, $request);
         $this->configService = $configService;
     }
@@ -22,26 +23,22 @@ class ConfigController extends Controller
     public function setConfig(array $values): DataResponse
     {
         if (isset($values['rules'])) {
-            $this->configService->setCurrentUserValueJson('rules', $values['rules']);
+            $this->configService->setConfigValueJson('rules', $values['rules']);
         }
 
-        return $this->getConfig();
+        return new DataResponse($this->configService->getCurrentUserConfig());
     }
 
     /**
      * @NoAdminRequired
      */
-    public function getConfig(): DataResponse
+    public function getStatistics(): DataResponse
     {
-        return new DataResponse([
-            'rules' => $this->configService->getCurrentUserConfig()
-        ]);
+        return new DataResponse($this->configService->getCurrentUserStatistics());
     }
 
     public function getAdminConfig(): DataResponse
     {
-        return new DataResponse([
-            'rules' => $this->configService->getAdminConfig()
-        ]);
+        return new DataResponse($this->configService->getAdminConfig());
     }
 }

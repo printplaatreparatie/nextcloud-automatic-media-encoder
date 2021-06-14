@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<SettingsSection title="Automatic Media Encoder" description="Configure rules to automatically convert your media as it is uploaded.">
-			<h2>{{ ta('Status') }}</h2>
+			<h2>{{ ta('Status') }} <span v-if="refreshing" class="icon icon-history" /> </h2>
 			<div>
 				<PersonalStatus :statistics="state.statistics" />
 			</div>
@@ -33,12 +33,30 @@ export default {
 	components: { PersonalStatus, ConversionRuleList, SettingsSection },
 
 	data: () => ({
+		refreshing: false,
+		polling: null,
 		state: loadState('automaticmediaencoder', 'user-config'),
 		loading: false,
 		saving: false,
 	}),
 
+	beforeDestroy() {
+		clearInterval(this.polling)
+	},
+
+	created() {
+		this.pollData()
+	},
+
 	methods: {
+		pollData() {
+			this.polling = setInterval(async() => {
+				if (document.hasFocus()) {
+					await this.updateStatistics()
+				}
+			}, 5000)
+		},
+
 		addConversionRule: debounce(function() {
 			this.state.rules.push({
 				id: generateUniqueId(),
@@ -86,6 +104,19 @@ export default {
 				console.error(e)
 			} finally {
 				this.saving = false
+			}
+		},
+
+		async updateStatistics() {
+			try {
+				this.refreshing = true
+				const { data } = await axios.get(generateUrl('/apps/automaticmediaencoder/statistics'))
+				this.state.statistics = data
+			} catch (e) {
+				showError(this.ta('Failed to save automatic media encoder config'))
+				console.error(e)
+			} finally {
+				this.refreshing = false
 			}
 		},
 	},

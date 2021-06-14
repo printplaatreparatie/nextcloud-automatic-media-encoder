@@ -4,7 +4,7 @@
     <name>Automatic Media Encoder</name>
     <summary>Automate photo/video conversion with rule-based configuration</summary>
     <description><![CDATA[Automatically re-encode photos/videos uploaded to Nextcloud so they can be viewed on all devices.]]></description>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <licence>agpl</licence>
     <author mail="cameron@wilby.com" homepage="https://github.com/cwilby">Cameron Wilby</author>
     <namespace>AutomaticMediaEncoder</namespace>

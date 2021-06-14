@@ -26,14 +26,19 @@ class ConfigService
         return [
             'rules' => $this->getConfigValueJson('rules', '[]'),
             'formats' => Formats::all(),
-            'statistics' => [
-                Queues::Pending => $this->getQueueCount(Queues::Pending),
-                Queues::Converting => $this->getQueueCount(Queues::Converting),
-                Queues::Finished => $this->getQueueCount(Queues::Finished),
-                Queues::Retries => $this->getQueueCount(Queues::Retries),
-                Queues::Failed => $this->getQueueCount(Queues::Failed),
-                Queues::Ignored => $this->getQueueCount(Queues::Ignored)
-            ]
+            'statistics' => $this->getCurrentUserStatistics()
+        ];
+    }
+
+    public function getCurrentUserStatistics()
+    {
+        return [
+            Queues::Pending => $this->getQueueCount(Queues::Pending),
+            Queues::Converting => $this->getQueueCount(Queues::Converting),
+            Queues::Finished => $this->getQueueCount(Queues::Finished),
+            Queues::Retries => $this->getQueueCount(Queues::Retries),
+            Queues::Failed => $this->getQueueCount(Queues::Failed),
+            Queues::Ignored => $this->getQueueCount(Queues::Ignored)
         ];
     }
 

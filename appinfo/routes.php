@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Create your routes in here. The name is the lowercase name of the controller
  * without the controller part, the stuff after the hash is the method.
@@ -9,8 +10,8 @@
  */
 return [
     'routes' => [
-        ['name' => 'config#getAdminConfig', 'url' => '/config', 'verb' => 'GET'],
-        ['name' => 'config#getConfig', 'url' => '/config', 'verb' => 'GET'],
-	    ['name' => 'config#setConfig', 'url' => '/config', 'verb' => 'PUT']
+        ['name' => 'config#getAdminConfig', 'url' => '/app-config', 'verb' => 'GET'],
+        ['name' => 'config#getStatistics', 'url' => '/statistics', 'verb' => 'GET'],
+        ['name' => 'config#setConfig', 'url' => '/config', 'verb' => 'PUT']
     ]
 ];

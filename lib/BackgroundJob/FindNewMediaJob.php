@@ -25,7 +25,7 @@ class FindNewMediaJob extends TimedJob
         parent::setInterval(60);
     }
 
-    public function run($arguments)
+    protected function run($arguments)
     {
         try {
             $this->userId = $arguments['uid'];

@@ -35,7 +35,7 @@ class ConvertVideojob extends QueuedJob
         $this->logger = $logger;
     }
 
-    public function run($arguments)
+    protected function run($arguments)
     {
         $this->job = $arguments['job'];
         $this->jobId = $this->job['id'];

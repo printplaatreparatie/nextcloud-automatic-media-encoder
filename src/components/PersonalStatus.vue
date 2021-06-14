@@ -26,7 +26,7 @@ export default {
 	props: {
 		statistics: {
 			required: true,
-			type: Array,
+			type: Object,
 		},
 	},
 
@@ -42,6 +42,10 @@ export default {
 	}),
 
 	computed: {
+		anyPresentStatistics() {
+			return Object.keys(this.presentStatistics).length
+		},
+
 		presentStatistics() {
 			return Object.entries(this.statistics).reduce((presentStatistics, [key, value]) => {
 				if (value > 0) {
