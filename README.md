@@ -1,5 +1,7 @@
 # Automatic Media Encoder
 
+![Kapture 2021-06-09 at 22 45 58](https://user-images.githubusercontent.com/13686317/121471489-a1a0ee80-c974-11eb-9150-4ab03376e8a5.gif)
+
 ## Getting Started
 
 [ffmpeg]() is a required dependency to support media conversion.  
@@ -18,18 +20,11 @@ There are two background jobs working as a pair.
 
 The first job is `FindNewMedia` which runs once every minute to do a quick recursive seek to find unconverted media in specified folders and schedule them for conversion.
 
+<img width="1067" alt="image" src="https://user-images.githubusercontent.com/13686317/121822502-414fcc80-cc54-11eb-8e23-a29a80725d11.png">
+
 The second job is `ConvertMedia` which runs on a configurable schedule to iterate over unconverted media scheduled by `FindNewMedia` in chronological order and spawn an `ffmpeg` process to convert the media based on the rules specified in Settings &gt; Automated Media Converter followed by the logic specified in the rule.
 
-The `ConvertMedia` job tries to convert as many media as it can before the next scheduled job, which will pick up where the last job left off, and can be scheduled to run as often as you like, opening up the following possibilities:
-
-### 1. Convert media as often as possible (say once a minute)
-If you are uploading short videos or have very fast hardware, you can get near real time video processing with this configuration.   However, it will likely fail to finish converting larger videos within the minute and retry infinitely.
-
-### 2. Convert media semi-often (say once every 60 minutes)
-This is a good balance between real-time processing and resource management.  It is likely most videos can be converted within 60 minutes on modern hardware.
-
-### 3. Convert media nightly
-This isn&#39;t likely useful in most scenarios, but could help when converting many long videos.
+<img width="606" alt="image" src="https://user-images.githubusercontent.com/13686317/121822323-6859ce80-cc53-11eb-8186-fddbf82ec64e.png">
 
 ## Development
 
