@@ -22,7 +22,7 @@ The first job is `FindNewMedia` which runs once every minute to do a quick recur
 
 <img width="1067" alt="image" src="https://user-images.githubusercontent.com/13686317/121822502-414fcc80-cc54-11eb-8e23-a29a80725d11.png">
 
-The second job is `ConvertMedia` which runs on a configurable schedule to iterate over unconverted media scheduled by `FindNewMedia` in chronological order and spawn an `ffmpeg` process to convert the media based on the rules specified in Settings &gt; Automated Media Converter followed by the logic specified in the rule.
+The second job is `ConvertMedia` which spawns a single `ffmpeg` process to convert a file found in `FindNewMedia`.
 
 <img width="606" alt="image" src="https://user-images.githubusercontent.com/13686317/121822323-6859ce80-cc53-11eb-8186-fddbf82ec64e.png">
 
