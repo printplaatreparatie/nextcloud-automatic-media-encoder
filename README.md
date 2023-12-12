@@ -1,3 +1,6 @@
+## This project is deprecated
+This project is abandoned in favor of [Nextcloud Workflow Media Converter](https://github.com/cwilby/nextcloud-workflow-media-converter).
+
 # Automatic Media Encoder
 
 ![Kapture 2021-06-09 at 22 45 58](https://user-images.githubusercontent.com/13686317/121471489-a1a0ee80-c974-11eb-9150-4ab03376e8a5.gif)
